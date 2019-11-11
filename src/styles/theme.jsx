@@ -1,7 +1,19 @@
 export const theme = {
     palette: {
         background: {
-            default: "#ccc",
+            default: "#eee",
         }
-    }
+    },
+    typography: {
+        htmlFontSize: 10,
+        fontFamily: [
+            'Playfair Display',
+            'serif',
+        ],
+        h1: {
+            fontWeight: 700,
+            fontSize: 10,
+            fontVariant: "small-caps",
+        }
+    },
 }

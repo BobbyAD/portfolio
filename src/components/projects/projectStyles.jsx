@@ -4,16 +4,19 @@ const projectStyles = makeStyles((theme) => ({
     cardsContainer: {
         width: "100%",
         display: "flex",
-        flexWrap: "wrap",
+        flexDirection: "column",
+        alignItems: "center",
     },
     card: {
         // Centering image, full size
         display: "flex",
         margin: "10px",
-        width: "30%",
+        width: "90%",
         justifyContent: "center",
-        //Responsive square
-        paddingBottom: "30%",
+        alignItems: "center",
+        //Responsive rectangles
+        paddingBottom: "25vh",
+        // height: "200px",
         overflow: "hidden",
         position: "relative",
         "& img": {
