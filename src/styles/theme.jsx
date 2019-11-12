@@ -14,6 +14,9 @@ export const theme = {
             fontWeight: 700,
             fontSize: 10,
             fontVariant: "small-caps",
+        },
+        body2: {
+            fontSize: ".8rem",
         }
     },
 }

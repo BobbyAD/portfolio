@@ -4,7 +4,9 @@ const aboutStyles = makeStyles((theme) => ({
     container: {
         display: "flex",
         flexDirection: "column",
-        margin: "0 5%",
+    },
+    header: {
+        marginBottom: "2rem",
     }
 }))
 

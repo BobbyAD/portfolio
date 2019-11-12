@@ -10,8 +10,10 @@ import {
     responsiveFontSizes,
     ThemeProvider,
 } from "@material-ui/core/styles";
+import { Typography } from "@material-ui/core";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
+import Skills from "./components/skills/Skills";
 
 function App() {
     const classes = appStyles();
@@ -30,6 +32,12 @@ function App() {
                     <div className={classes.tenTwentyFour}>
                         <About />
                         <Projects />
+                        <Skills />
+                        <Typography variant="body1">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi necessitatibus fugiat, voluptatibus consequuntur dolores numquam quis non, laborum nemo, voluptatem dolore beatae possimus quia sint placeat repudiandae sequi unde obcaecati.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi necessitatibus fugiat, voluptatibus consequuntur dolores numquam quis non, laborum nemo, voluptatem dolore beatae possimus quia sint placeat repudiandae sequi unde obcaecati.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi necessitatibus fugiat, voluptatibus consequuntur dolores numquam quis non, laborum nemo, voluptatem dolore beatae possimus quia sint placeat repudiandae sequi unde obcaecati.
+                        </Typography>
                     </div>
                 </div>
             </ThemeProvider>

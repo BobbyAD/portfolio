@@ -6,7 +6,7 @@ const About = () => {
     const classes = aboutStyles();
     return (
         <div className={classes.container}>
-            <Typography variant="h3">
+            <Typography variant="h2" className={classes.header}>
                 About Me
             </Typography>
             <Typography variant="body1">
