@@ -2,11 +2,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const projectStyles = makeStyles((theme) => ({
     cardsContainer: {
+        ...theme.tenTwentyFour,
         width: "100%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "5rem",
+        padding: "3rem 2.5%"
     },
     header: {
         alignSelf: "flex-start",
@@ -18,10 +19,10 @@ const projectStyles = makeStyles((theme) => ({
         margin: "10px",
         minWidth: "100%",
         justifyContent: "center",
-        border: "1px solid red",
+        border: "1px solid white",
         alignItems: "center",
         //Responsive rectangles
-        paddingBottom: "25vh",
+        height: "25vh",
         overflow: "hidden",
         position: "relative",
         "& img": {

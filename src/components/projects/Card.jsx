@@ -4,14 +4,14 @@ import { useSpring, animated as a } from "react-spring";
 import { Typography } from '@material-ui/core';
 
 const Card = ({ card }) => {
-    const [hover, setHover] = useState(false);
+    const [click, setClick] = useState(false);
 
     const { left } = useSpring({
         from: {
             left: "100%",
         },
         to: {
-            left: hover ? "25%" : "100%",
+            left: click ? "25%" : "100%",
         }
     })
 
@@ -20,20 +20,34 @@ const Card = ({ card }) => {
             opacity: "0%"
         },
         to: {
-            opacity: hover ? "50%" : "0%",
+            opacity: click ? "50%" : "0%",
+        }
+    })
+
+    const { height } = useSpring({
+        from: {
+            height: "25vh",
+        },
+        to: {
+            height: click ? "50vh" : "25vh",
         }
     })
 
     const classes = projectStyles();
 
     const onClick = (e) => {
-        setHover(!hover);
+        setClick(!click);
     }
 
     return (
-        <div className={classes.card} onClick={onClick} style={{ cursor: hover ? "auto" : "pointer" }}>
-            <img src={card.image} alt="Screenshot of a project"/>
-            <a.div className={classes.darken} style={{opacity}}/>
+        <a.div className={classes.card} onClick={onClick} style={
+            {
+                cursor: click ? "auto" : "pointer",
+                height
+            }
+        }>
+            <img src={card.image} alt="Screenshot of a project" />
+            <a.div className={classes.darken} style={{ opacity }} />
             <a.div className={classes.info} style={
                 {
                     left
@@ -44,7 +58,7 @@ const Card = ({ card }) => {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ipsum magnam incidunt reprehenderit consequuntur, pariatur veritatis reiciendis, nobis voluptates obcaecati rerum assumenda repellat totam amet vitae necessitatibus esse, alias aspernatur.
                 </Typography>
             </a.div>
-        </div>
+        </a.div>
     )
 }
 

@@ -16,8 +16,9 @@ const Skill = ({ content }) => {
     const onChange = (isVisible) => {
         setVis(isVisible);
     }
+
     return (
-        <div className={classes.container}>
+        <div className={classes.skillContainer}>
             <VisibilitySensor onChange={onChange}>
                 <div className={classes.vis}>
                     <a.div className={classes.back} style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>{content}</a.div>

@@ -19,4 +19,7 @@ export const theme = {
             fontSize: ".8rem",
         }
     },
+    tenTwentyFour: {
+        maxWidth: "1024px",
+    }
 }

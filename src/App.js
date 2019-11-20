@@ -8,7 +8,7 @@ import { theme } from "./styles/theme";
 import {
     createMuiTheme,
     responsiveFontSizes,
-    ThemeProvider,
+    ThemeProvider
 } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 
@@ -19,7 +19,7 @@ function App() {
     const classes = appStyles();
     const fontOptions = {
         // breakpoints: ['xs', 'sm', 'md', 'lg', 'xl'],
-        factor: 3.4,
+        factor: 3.4
     };
     const muiTheme = responsiveFontSizes(createMuiTheme(theme), fontOptions);
 
@@ -29,14 +29,28 @@ function App() {
                 <CssBaseline />
                 <div className={classes.container}>
                     <Main />
-                    <div className={classes.tenTwentyFour}>
-                        <About />
+                    <About />
+                    <div className={classes.black}>
                         <Projects />
-                        <Skills />
+                    </div>
+                    <Skills />
+                    <div className={classes.tenTwentyFour}>
                         <Typography variant="body1">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi necessitatibus fugiat, voluptatibus consequuntur dolores numquam quis non, laborum nemo, voluptatem dolore beatae possimus quia sint placeat repudiandae sequi unde obcaecati.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi necessitatibus fugiat, voluptatibus consequuntur dolores numquam quis non, laborum nemo, voluptatem dolore beatae possimus quia sint placeat repudiandae sequi unde obcaecati.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi necessitatibus fugiat, voluptatibus consequuntur dolores numquam quis non, laborum nemo, voluptatem dolore beatae possimus quia sint placeat repudiandae sequi unde obcaecati.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Nisi necessitatibus fugiat, voluptatibus
+                            consequuntur dolores numquam quis non, laborum nemo,
+                            voluptatem dolore beatae possimus quia sint placeat
+                            repudiandae sequi unde obcaecati. Lorem ipsum, dolor
+                            sit amet consectetur adipisicing elit. Nisi
+                            necessitatibus fugiat, voluptatibus consequuntur
+                            dolores numquam quis non, laborum nemo, voluptatem
+                            dolore beatae possimus quia sint placeat repudiandae
+                            sequi unde obcaecati. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Nisi necessitatibus
+                            fugiat, voluptatibus consequuntur dolores numquam
+                            quis non, laborum nemo, voluptatem dolore beatae
+                            possimus quia sint placeat repudiandae sequi unde
+                            obcaecati.
                         </Typography>
                     </div>
                 </div>

@@ -17,6 +17,9 @@ const Main = () => {
                 <Typography variant="h1">
                     Driskell
                 </Typography>
+                <Typography variant="body1" className={classes.subtitle}>
+                    Full-Stack Developer
+                </Typography>
             </div>
         </div>
     )

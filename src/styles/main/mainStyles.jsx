@@ -29,6 +29,9 @@ const mainStyles = makeStyles((theme) => ({
         fontWeight: "700",
         color: "#222",
         userSelect: "none",
+    },
+    subtitle: {
+        textAlign: "right",
     }
 }))
 

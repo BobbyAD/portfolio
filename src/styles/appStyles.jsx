@@ -9,8 +9,13 @@ const appStyles = makeStyles((theme) => ({
         alignItems: "center",
         boxSizing: "border-box",
     },
-    tenTwentyFour: {
-        maxWidth: "1024px",
+    black: {
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        background: "#0f0f0f",
+        color: "white",
+        marginTop: "4rem",
     }
 }))
 
