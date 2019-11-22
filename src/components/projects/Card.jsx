@@ -5,13 +5,14 @@ import { Typography } from '@material-ui/core';
 
 const Card = ({ card }) => {
     const [click, setClick] = useState(false);
+    const [hover, setHover] = useState(false);
 
     const { left } = useSpring({
         from: {
             left: "100%",
         },
         to: {
-            left: click ? "25%" : "100%",
+            left: click ? "5%" : "100%",
         }
     })
 
@@ -33,20 +34,42 @@ const Card = ({ card }) => {
         }
     })
 
+    const { x } = useSpring({
+        from: {
+            x: 100,
+        },
+        to: {
+            x: hover ? 0 : 100,
+        }
+    })
+
     const classes = projectStyles();
 
     const onClick = (e) => {
         setClick(!click);
     }
 
+    const onEnter = (e) => {
+        setHover(true);
+    }
+
+    const onLeave = (e) => {
+        setHover(false);
+    }
+
     return (
-        <a.div className={classes.card} onClick={onClick} style={
+        <a.div className={classes.card} onClick={onClick} onMouseEnter={onEnter} onMouseLeave={onLeave} style={
             {
                 cursor: click ? "auto" : "pointer",
                 height
             }
         }>
-            <img src={card.image} alt="Screenshot of a project" />
+            <Typography variant="h3" className={classes.cardHeader}>{card.name}</Typography>
+            <a.img src={card.image} alt="Screenshot of a project" style={
+                {
+                    filter: x.interpolate(x => `grayscale(${x}%)`)
+                }
+            }/>
             <a.div className={classes.darken} style={{ opacity }} />
             <a.div className={classes.info} style={
                 {

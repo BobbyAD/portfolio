@@ -32,6 +32,10 @@ const projectStyles = makeStyles((theme) => ({
             minWidth: "100%",
         },
     },
+    cardHeader: {
+        zIndex: "1",
+        textTransform: "uppercase",
+    },
     info: {
         position: "absolute",
         width: "100%",
@@ -63,7 +67,7 @@ const projectStyles = makeStyles((theme) => ({
         width: "100%",
         height: "100%",
         background: "black",
-    }
+    },
 }))
 
 export { projectStyles }

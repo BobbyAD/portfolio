@@ -25,6 +25,8 @@ const mainStyles = makeStyles((theme) => ({
         userSelect: "none",
     },
     lastName: {
+        display: "flex",
+        flexDirection: "column",
         marginLeft: "15%",
         fontWeight: "700",
         color: "#222",
@@ -32,6 +34,13 @@ const mainStyles = makeStyles((theme) => ({
     },
     subtitle: {
         textAlign: "right",
+    },
+    logos: {
+        alignSelf: "flex-end",
+        "& img": {
+            width: "2rem",
+            margin: ".3rem",
+        }
     }
 }))
 

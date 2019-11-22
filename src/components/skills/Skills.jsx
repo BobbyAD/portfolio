@@ -3,7 +3,7 @@ import Skill from "./Skill";
 import { Typography } from '@material-ui/core';
 import skillStyles from "../../styles/skills/skillStyles";
 
-const testArr = ["hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey",]
+const skills = ["JavaScript", "React", "Redux", "CSS", "LESS/SASS", "Firebase/Firestore", "Java/Spring", "Python"]
 
 // This is just here to map over the array, keeps App.js a little cleaner
 // Also lets me keep my styles better divided
@@ -15,7 +15,7 @@ const Skills = () => {
             <Typography variant="h2">
                 Skills
             </Typography>
-            {testArr.map((i) => (
+            {skills.map((i) => (
                 <Skill content={i}/>
             ))}
         </div>
