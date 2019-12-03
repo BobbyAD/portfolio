@@ -10,7 +10,7 @@ const About = () => {
                 About Me
             </Typography>
             <Typography variant="body1">
-                After a few years blah blah blah working artist blah blah blah me want be cool programmer man. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur animi qui dolorum deserunt iusto totam, incidunt ea nam asperiores! Modi illo neque laboriosam nulla cupiditate facere vitae rem commodi.
+                I have a Bachelor's of Fine Arts from the University of Texas in Fine Art. After years of working as an artist, I've made the move to software development. I attended Lambda School's Full-Stack Web Development program where I've learned a number of different technologies for both front end and back end development. My experience as an artist sets me apart as a developer who understands both the technical aspects of development, as well as the design and user interface aspects.
             </Typography>
         </div>
     )

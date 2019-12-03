@@ -22,7 +22,7 @@ const projectStyles = makeStyles((theme) => ({
         border: "1px solid white",
         alignItems: "center",
         //Responsive rectangles
-        height: "25vh",
+        minHeight: "25vh",
         overflow: "hidden",
         position: "relative",
         "& img": {
@@ -50,8 +50,8 @@ const projectStyles = makeStyles((theme) => ({
         fontSize: "4rem",
         userSelect: "none",
         lineHeight: "4rem",
-        paddingRight: "50%",
-        paddingLeft: "2%",
+        paddingRight: "10%",
+        paddingLeft: "5%",
         paddingTop: "1%",
         textAlign: "justify",
         overflowY: "scroll",
@@ -59,6 +59,7 @@ const projectStyles = makeStyles((theme) => ({
     infoHeader: {
         alignSelf: "center",
         textAlign: "center",
+        marginBottom: "1rem",
     },
     darken: {
         position: "absolute",
@@ -68,6 +69,18 @@ const projectStyles = makeStyles((theme) => ({
         height: "100%",
         background: "black",
     },
+    icons: {
+        marginTop: "5%",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        "& a": {
+            textDecoration: "none",
+            color: "#fff",
+            padding: "1rem",
+            border: "1px solid white",
+        }
+    }
 }))
 
 export { projectStyles }

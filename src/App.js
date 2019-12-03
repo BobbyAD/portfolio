@@ -27,14 +27,15 @@ function App() {
         <>
             <ThemeProvider theme={muiTheme}>
                 <CssBaseline />
-                <div className={classes.container}>
+                <div className={classes.container} name="top">
                     <Main />
                     <About />
                     <div className={classes.black}>
                         <Projects />
                     </div>
                     <Skills />
-                    <div className={classes.tenTwentyFour}>
+                    {/* TODO: Email form here */}
+                    {/* <div className={classes.tenTwentyFour}>
                         <Typography variant="body1">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Nisi necessitatibus fugiat, voluptatibus
@@ -52,7 +53,7 @@ function App() {
                             possimus quia sint placeat repudiandae sequi unde
                             obcaecati.
                         </Typography>
-                    </div>
+                    </div> */}
                 </div>
             </ThemeProvider>
         </>

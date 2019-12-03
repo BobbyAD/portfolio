@@ -1,5 +1,4 @@
 import React from 'react'
-import Skill from "./Skill";
 import { Typography } from '@material-ui/core';
 import skillStyles from "../../styles/skills/skillStyles";
 
@@ -12,12 +11,12 @@ const Skills = () => {
 
     return (
         <div className={classes.container}>
-            <Typography variant="h2">
+            <Typography variant="h2" className={classes.header}>
                 Skills
             </Typography>
-            {skills.map((i) => (
-                <Skill content={i}/>
-            ))}
+            <Typography variant="body1">
+                My projects are mostly built using a React front end, and either a Java Spring, Firebase/Firestore, or Django backend. However, I am getting more in to using Node/Express as my back end framework. I typically use Material-UI's styling framework, but I'm proficient in vanilla CSS and CSS pre-processors (LESS/SASS).
+            </Typography>
         </div>
     )
 }

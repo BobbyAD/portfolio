@@ -37,9 +37,11 @@ const mainStyles = makeStyles((theme) => ({
     },
     logos: {
         alignSelf: "flex-end",
-        "& img": {
-            width: "2rem",
-            margin: ".3rem",
+        "& a": {
+            textDecoration: "none",
+            color: "#222",
+            fontSize: "2rem",
+            marginLeft: "1rem",
         }
     }
 }))

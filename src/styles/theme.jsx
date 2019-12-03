@@ -16,7 +16,7 @@ export const theme = {
             fontVariant: "small-caps",
         },
         body2: {
-            fontSize: ".8rem",
+            fontSize: "1.2rem",
         }
     },
     tenTwentyFour: {

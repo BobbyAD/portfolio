@@ -1,8 +1,7 @@
 import React from 'react'
 import { mainStyles } from '../../styles/main/mainStyles';
 import { Typography } from '@material-ui/core';
-import github from "../../images/github.png";
-import linkedin from "../../images/linkedin.png";
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Main = () => {
     const classes = mainStyles();
@@ -24,10 +23,10 @@ const Main = () => {
                 </Typography>
                 <div className={classes.logos}>
                     <a href="https://www.linkedin.com/in/bobbyad/">
-                        <img src={linkedin} alt="LinkedIn logo" />
+                        <FaLinkedin />
                     </a>
                     <a href="https://github.com/BobbyAD">
-                        <img src={github} alt="Github logo" />
+                        <FaGithub />
                     </a>
                 </div>
             </div>

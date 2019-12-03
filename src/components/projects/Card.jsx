@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { projectStyles } from "./projectStyles"
 import { useSpring, animated as a } from "react-spring";
 import { Typography } from '@material-ui/core';
+import { FaGithub } from 'react-icons/fa';
+import { FiLink } from 'react-icons/fi';
 
 const Card = ({ card }) => {
     const [click, setClick] = useState(false);
@@ -30,7 +32,7 @@ const Card = ({ card }) => {
             height: "25vh",
         },
         to: {
-            height: click ? "50vh" : "25vh",
+            height: click ? "60vh" : "25vh",
         }
     })
 
@@ -67,7 +69,7 @@ const Card = ({ card }) => {
             <Typography variant="h3" className={classes.cardHeader}>{card.name}</Typography>
             <a.img src={card.image} alt="Screenshot of a project" style={
                 {
-                    filter: x.interpolate(x => `grayscale(${x}%)`)
+                    filter: x.interpolate(x => `grayscale(${x}%) blur(${x/20}px) brightness(50%)`),
                 }
             }/>
             <a.div className={classes.darken} style={{ opacity }} />
@@ -78,8 +80,16 @@ const Card = ({ card }) => {
             }>
                 <Typography variant="h4" className={classes.infoHeader}>{card.name}</Typography>
                 <Typography variant="body2" className={classes.description}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ipsum magnam incidunt reprehenderit consequuntur, pariatur veritatis reiciendis, nobis voluptates obcaecati rerum assumenda repellat totam amet vitae necessitatibus esse, alias aspernatur.
+                    {card.description}
                 </Typography>
+                <div className={classes.icons}>
+                    <a href={card.link}>
+                        <FiLink />
+                    </a>
+                    <a href={card.git}>
+                        <FaGithub />
+                    </a>
+                </div>
             </a.div>
         </a.div>
     )
