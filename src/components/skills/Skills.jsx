@@ -15,7 +15,7 @@ const Skills = () => {
                 Skills
             </Typography>
             <Typography variant="body1">
-                My projects are mostly built using a React front end, and either a Java Spring, Firebase/Firestore, or Django backend. However, I am getting more in to using Node/Express as my back end framework. I typically use Material-UI's styling framework, but I'm proficient in vanilla CSS and CSS pre-processors (LESS/SASS).
+                My projects are mostly built using a React front end, and either a Java Spring, Firebase/Firestore, or Django backend. However, I am also becoming more proficient at using Node/Express as my backend framework. I typically use Material-UI's styling framework, but I'm proficient in vanilla CSS and CSS pre-processors (LESS/SASS).
             </Typography>
         </div>
     )
